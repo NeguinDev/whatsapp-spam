@@ -7,9 +7,15 @@ function start(message, count, interval) {
 }
 
 async function sendMessage(message) {
-	document.querySelector('p[class="selectable-text copyable-text"]').focus();
+	const main = document.querySelector("#main");
+
+	main.querySelector(`div[contenteditable="true"]`).focus();    
 	await document.execCommand('insertText', false, message);
-	document.querySelector('[data-testid="send"]').click();
+    
+	setTimeout(() => {
+		const iconSend = main.querySelector('[data-testid="send"]') || main.querySelector('[data-icon="send"]');
+		iconSend.click();
+	}, 100);
 }
 
 const message = prompt('Insira a mensagem:');
