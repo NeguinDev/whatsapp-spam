@@ -8,19 +8,11 @@ WhatsApp Spam is a simple JavaScript script designed to send a specified number 
 
 - A web browser with Developer Tools (e.g., Chrome, Firefox)
 
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/NeguinDev/whatsapp-spam.git
-```
-
 ## Usage
 
 1. Open WhatsApp Web and log in.
 2. Open Developer Tools (F12 or right-click -> Inspect).
-3. Copy and paste the script into the console and run it.
+3. Copy and paste the [script](https://github.com/NeguinDev/whatsapp-spam/blob/main/whatsapp_spam.js) into the console and run it.
 
 ## Features
 
